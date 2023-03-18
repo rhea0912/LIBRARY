@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    font-family: "inter";
+}
+section{
+    height: 45px;
+    background-color: #275ccc;
+    padding: 0 50px;
+}
+/*==================HEADER================*/
+.header{
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header p{
+    margin: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.button-con button{
+    padding:15px 20px;
+    border: none;
+}
+.button-con button:first-child{
+    background-color: white;    
+    color:  #275ccc;
+    font-weight: 700;
+}
+.button-con button{
+    background-color: transparent;
+    color: white;
+}
+.button-con button:nth-child(3){
+    padding-right: 0;
+}
+/*================== END OF HEADER================*/
+
+.main{
+    margin-top: 50px;
+    border-radius: 17px;    
+    height: 80vh;
+    position: relative;
+    box-shadow: 1px 3px 4px #666a6d73;
+    background-color:white;
+}
+.main-sticky{   
+    position: sticky;
+}
+.main-sticky .add{
+    height: 10vh;
+    display: flex;  
+    justify-content: flex-end; 
+}
+.add button{
+    margin-top: 25px;
+    margin-right: 50px;
+    height: 4vh;
+    padding: 0 35px;
+    border: none;
+    background-color: #275ccc;
+    color: white;
+}
+/* .table{
+
+} */
+/* .main-sticky .table-header{
+    display: flex;
+    margin: 0 50px;
+    border-bottom: 1px solid #6b6b6b2f;
+}
+.table-header div{      
+    margin-bottom: 10px;
+    margin-right: 15vw;
+    color: #275ccc;
+}
+.table-header div:first-child{
+    margin-left: 20px   ;
+}
+.table-row{
+    margin: 0 50px;
+    border-bottom: 1px solid #6b6b6b2f;
+    display: flex;  
+   justify-content: center;
+   align-items: center;
+}   
+.table-row p{  
+    margin:5px 16vw 5px 0;
+    color: #275ccc; 
+
+}
+.table-row p:first-child{       
+    background-color: #CCCCCC;
+    padding: 20px 35px;
+} */
