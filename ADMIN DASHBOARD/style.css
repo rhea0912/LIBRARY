@@ -20,22 +20,20 @@ section{
     font-size: 15px;
     font-weight: 500;
 }
-.button-con button{
+.atag-con a{
     padding:15px 20px;
     border: none;
-}
-.button-con button:first-child{
-    background-color: white;    
-    color:  #275ccc;
-    font-weight: 700;
-}
-.button-con button{
+    text-decoration: none;
     background-color: transparent;
     color: white;
 }
-.button-con button:nth-child(3){
-    padding-right: 0;
+.atag-con a:hover{
+    background-color: white;
+    color: blue;
+    font-weight: 700;
 }
+
+
 /*================== END OF HEADER================*/
 
 .main{
@@ -45,14 +43,17 @@ section{
     position: relative;
     box-shadow: 1px 3px 4px #666a6d73;
     background-color:white;
+    /* overflow: auto; */
 }
 .main-sticky{   
-    position: sticky;
+    position: sticky;  
+ 
 }
 .main-sticky .add{
     height: 10vh;
     display: flex;  
     justify-content: flex-end; 
+    /* background-color: aqua; */
 }
 .add button{
     margin-top: 25px;
@@ -62,36 +63,117 @@ section{
     border: none;
     background-color: #275ccc;
     color: white;
-}
-/* .table{
-
-} */
-/* .main-sticky .table-header{
-    display: flex;
-    margin: 0 50px;
-    border-bottom: 1px solid #6b6b6b2f;
-}
-.table-header div{      
-    margin-bottom: 10px;
-    margin-right: 15vw;
-    color: #275ccc;
-}
-.table-header div:first-child{
-    margin-left: 20px   ;
-}
-.table-row{
-    margin: 0 50px;
-    border-bottom: 1px solid #6b6b6b2f;
-    display: flex;  
-   justify-content: center;
-   align-items: center;
 }   
-.table-row p{  
-    margin:5px 16vw 5px 0;
-    color: #275ccc; 
+.tableFixHead {
+    overflow-y: auto; 
+    height: 390px; 
+    color:#275CCC;
+    margin: 0 50px;
+
+  }
+  .tableFixHead thead th {
+    position: sticky;
+    top: 0px; 
+    text-align: left;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th,
+  td {
+    padding: 8px 16px;
+    border-bottom: 1px solid #CCCCCC;
+  }
+  th{
+   background-color:white;
+   z-index: 5;
+ }
+tr{
+    height: 50px;
+}
+tr td div{
+    height: 30px;
+    width: 50px;
+    background-color: #CCCCCC;
 
 }
-.table-row p:first-child{       
-    background-color: #CCCCCC;
-    padding: 20px 35px;
-} */
+/* ==================BACK DROP =============== */
+.back-drop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff6c;
+}
+.side-bar{
+    color: #747474;
+    height: 100vh;
+    width: 500px;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    box-shadow: -8px 0 8px #00000036;
+    padding: 0 50px;
+    overflow: auto;
+}
+.side-bar .fa-times{
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.name input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #EBEBEB;
+    color: #747474;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+textarea{
+    height:100px;
+}
+.name p{
+    margin: 10px 0;
+}
+.links, .links div{
+    display: flex;
+    color:#747474;
+}
+.links div{
+    padding-right: 20px;
+}
+.links input{
+    width: 20px;
+    cursor: pointer;
+    color: #275CCC;
+    margin-right: 10px;
+}
+.image{
+    height: 150px;
+    background-color:#ebebeb ;
+    width: 50%;
+}
+.name .buttons{
+ margin-top: 20px;
+ margin-right: 15px;
+ padding: 7px 35px;
+ background-color: #275CCC;
+ border: none;
+ color: white;
+ cursor: pointer;
+ border-radius: 5px;
+}
+.buttons:hover{
+
+    font-weight: 900;
+    background-color: #275bcc4f;
+    font-size: 15px;
+}
+
+
+

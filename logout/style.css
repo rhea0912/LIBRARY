@@ -1,0 +1,74 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: "inter";
+    background-color:#f4f6f8;
+}
+.container{
+    padding: 0 50px;
+}
+
+.header{
+    height: 70px;
+    background: #275CCC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    position: sticky;
+    top: 0;
+}
+
+.dvds{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap:170px;
+    row-gap: 100px;
+}
+.dvds .section{
+    background-color: white;
+    height:35vw;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.281) ;
+    padding: 10px;
+}
+
+.section .box{
+    height: 25vw;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.box > p{
+ font-weight: 700;
+ color: #275CCC;
+
+}
+.section > p{
+    color: #275CCC;
+    font-weight: 900;
+    font-size: 1vw;
+    margin-bottom:1vw;
+}
+.section div:nth-child(3){
+    color: #6C94B9;
+    font-size:.9vw;
+}
+.section div:nth-child(4){
+    color: #275CCC;
+    margin: .5vw 0;
+}
+.section button{
+    width: 100%;
+    padding: 1vw;
+    font-size: 1vw;
+    color: white;
+    background-color: #275CCC;
+    border: none;
+}
+.section .renting{
+    background-color: #00CA51;
+}

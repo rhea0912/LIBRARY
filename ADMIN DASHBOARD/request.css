@@ -1,0 +1,15 @@
+.main-sticky .request{
+    color: #275CCC;
+    display: flex;
+    font-weight: 700;   
+    font-size: 25px;
+    padding-right: 50px;
+    align-items: center;
+    position: sticky;
+}
+td button.approved{
+    background-color: #00d738;
+}
+td button.deny{
+    background-color: #ff2e18;
+}
